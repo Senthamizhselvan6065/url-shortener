@@ -90,7 +90,7 @@ userRouter.post('/forgot/password', expressAsyncHandler( async (req, res, next) 
     /* reset password function */
     const resetToken = await resetUrlStringToken(user);
     await user.save()
-    let BASE_URL = process.env.FRONTEND_URL;
+    let BASE_URL = process.env.FRONTEND_URL; 
     /* create reset url */ 
     const resetUrl = `<a href=${BASE_URL}/reset/password/${resetToken}> Rest your password </a>`;
      /* email send nessage */
