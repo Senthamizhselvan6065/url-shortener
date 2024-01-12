@@ -1,0 +1,71 @@
+.short-url-container{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--l-blue);
+}
+
+.short-url-container > .short-url-card > h2{
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    color: var(--blue);
+}
+
+.short-url-card{
+     padding: 20px;
+     width: 1000px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.short-url-card > h3{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--gray);
+}
+
+.short-url-card > p{
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.short-url-box{
+    width: 700px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.short-url-box > h3{
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+.short-url-box > button{
+    padding: 10px 30px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}

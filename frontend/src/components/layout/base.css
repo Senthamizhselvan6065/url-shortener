@@ -1,0 +1,40 @@
+.base-app-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--l-blue);
+}
+
+header{
+    background-color: var(--l-blue);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+}
+
+header .logo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 500;    
+    color: var(--white);
+}
+
+header .logo h2 .icon-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;    
+}
+
+header .navigation-link{
+    display: inline-flex;
+    gap: 60px;
+}

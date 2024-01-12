@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "url shortener application created and using MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "set NODE_ENV=development&&nodemon server.js",
+    "prod": "set NODE_ENV=production&&nodemon server.js"
+  },
+  "author": "senthamizhselavn",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.4",
+    "nodemailer": "^6.9.8",
+    "nodemon": "^3.0.2",
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9",
+    "validator": "^13.11.0"
+  }
+}

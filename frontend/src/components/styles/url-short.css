@@ -1,0 +1,115 @@
+.url-shortener-container{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--l-blue);
+}
+
+.url-shortener-container h2{
+    font-size: 2.6rem;
+    color: var(--blue);
+}
+
+.url-container{
+    width: 60%;
+    height: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 25px;
+    background-color: var(--white);
+}
+
+.url-container h3{
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.url-container p{
+    width: 94%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.url-card{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.url-card input{
+    width: 80%;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: 2px solid var(--l-blue);
+    border-radius: 5px;
+    outline: none;
+}
+
+.url-card button{
+    width: 30%;
+    padding: 14px 20px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--l-blue);
+    color: var(--white);
+    border: 2px solid var(--l-blue);
+}
+
+.url-content{
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.url-content h3{
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+
+.url-content p{
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--gray);
+}
+
+.url-content > #link{
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+}
