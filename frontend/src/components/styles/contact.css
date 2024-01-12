@@ -88,6 +88,11 @@
     cursor: pointer;
 }
 
+.contact-card > .navigation-link > #link{
+    color: var(--l-blue);
+    font-weight: 500;
+}
+
 .contact-card > .icons{
     width: 90%;
     padding: 10px;

@@ -38,7 +38,11 @@ const Urlshortener = () => {
 
   return (
     <div className='url-shortener-container'>
-          <h2>Short Url</h2>
+         <div className="title">
+            <h3 onClick={() => navigate('/')}>Home</h3>
+            <h2>Short Url</h2>
+            <h3 onClick={() => navigate('/short/url')}>Click Count</h3>
+         </div>
         <div className="url-container">
             <h3>Paste the URL to be shortened</h3>
                 <form className="url-card" onSubmit={formik.handleSubmit}>

@@ -38,3 +38,76 @@ header .navigation-link{
     display: inline-flex;
     gap: 60px;
 }
+
+
+.mobile-view{
+    color: var(--white);
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .mobile-view{
+        display: block;
+        z-index: 1;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    header{
+        justify-content: center;
+        padding: 0;
+    }
+    header > .logo{
+        width: 90%;
+    }
+    header > .logo > h2{
+        font-size: 1.8rem;
+    }
+    header > .navigation-link{
+        background-color: var(--l-blue);
+        opacity: 0.9;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 50vh;
+    }
+    header > .navigation-link.active{
+        left: 0;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    header{
+        padding: 10px;
+    }
+    .mobile-view{
+        font-size: 1.5rem;
+    }
+    header > .logo > h2{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        padding: 0 10px;
+    }
+    .mobile-view{
+        font-size: 1.4rem;
+    }
+    header > .logo > h2{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}

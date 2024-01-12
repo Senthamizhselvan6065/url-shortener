@@ -1,71 +1,207 @@
 .short-url-container{
+    background-color: var(--l-blue);
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+
+.short-url-container > header{
+    position: sticky;
+    top: 0;
     padding: 20px;
+    height: fit-content;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     background-color: var(--l-blue);
 }
 
-.short-url-container > .short-url-card > h2{
-    font-size: 2.4rem;
+.short-url-container > header > h2{
     letter-spacing: 1px;
+    font-size: 1.8rem;
+    text-align: center;
     color: var(--blue);
 }
 
-.short-url-card{
-     padding: 20px;
-     width: 1000px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     gap: 10px;
-}
-
-.short-url-card > h3{
+.short-url-container > header > h3{
+    letter-spacing: 1px;
     font-size: 1.4rem;
-    letter-spacing: 1px;
     text-align: center;
     color: var(--gray);
 }
 
-.short-url-card > p{
+.short-url-container > header > p{
     letter-spacing: 1px;
-    line-height: 30px;
-    text-align: center;
     font-size: 1rem;
+    text-align: center;
     color: var(--gray);
 }
 
-.short-url-box{
-    width: 700px;
-    margin-top: 20px;
+.short-url-container > .short-url-card{
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--l-blue);
+}
+
+.short-url-container > .short-url-card > .box{
+    width: 60%;
+    padding: 50px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
+    background-color: var(--white);
+    border-radius: 16px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 25px;
 }
 
-.short-url-box > h3{
+.short-url-container > .short-url-card > .box > h3{
     letter-spacing: 1px;
+    font-weight: 600;
     font-size: 1.2rem;
-    color: var(--gray);
+    color: var(--l-blue);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.short-url-box > button{
-    padding: 10px 30px;
-    font-size: 1rem;
+.short-url-container > .short-url-card > .box > h3 > a{
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+    font-family: 'Space Mono', monospace;
     letter-spacing: 1px;
+    color: rgb(255, 55, 0);
+    text-decoration: underline;
+    line-height: 30px;
+}
+
+.short-url-container > .short-url-card > .box > h4{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.short-url-container > .short-url-card > .box > h4 > p{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: rgb(255, 55, 0);
+}
+
+.short-url-container > .short-url-card > .box > button{
+    padding: 10px 30px;
+    font-size: 15px;
     font-weight: 500;
+    letter-spacing: 1px;
     border: none;
     outline: none;
     border-radius: 5px;
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--l-blue);
+    color: var(--gray);
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .short-url-container  > .short-url-card > .box{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .short-url-container  > .short-url-card > .box{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .short-url-container > header{
+        gap: 10px;
+    }
+    .short-url-container > header > h2{
+        font-size: 1.6rem;
+    }
+    .short-url-container > header > h3{
+        font-size: 1.1rem;
+    }
+    .short-url-container > header > p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .short-url-container > .short-url-card > .box{
+        width: 90%;
+        padding: 40px;
+    }
+    .short-url-container > .short-url-card > .box > h3{
+        font-size: 1.1rem;
+    }
+    .short-url-container > .short-url-card > .box > h3 > a{
+        font-size: 1.1rem;
+        margin-left: 0;
+    }
+    .short-url-container > .short-url-card > .box > h4{
+        font-size: 1.1rem;
+    }
+
+    .short-url-container > .short-url-card > .box > button{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .short-url-container > header{
+       gap: 10px;
+    }
+    .short-url-container > header > h2{
+        font-size: 1.4rem;
+    }
+    .short-url-container > header > h3{
+        font-size: 1rem;
+    }
+    .short-url-container > header > p{
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 30px;
+    }
+    .short-url-container > .short-url-card > .box{
+        width: 98%;
+        padding: 40px;
+    }
+    .short-url-container > .short-url-card > .box > h3{
+        letter-spacing: 0px;
+        font-size: 1rem;
+    }
+    .short-url-container > .short-url-card > .box > h3 > a{
+        font-size: 1rem;
+        margin-left: 0;
+    }
+    .short-url-container > .short-url-card > .box > h4{
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+
+    .short-url-container > .short-url-card > .box > button{
+        font-size: 13px;
+    }
 }

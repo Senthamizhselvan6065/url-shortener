@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Ubuntu+Mono:wght@700&display=swap');
 
 *{
     margin: 0;
@@ -62,6 +63,7 @@ ul{
     font-weight: 500;
     font-size: 2rem;
     color: var(--l-blue);
+    text-align: center;
 }
 
 .card > form{
@@ -105,11 +107,11 @@ ul{
     cursor: pointer;
 }
 
-.navigation-link{
+.card > .navigation-link{
     letter-spacing: 1px;
 }
 
-.navigation-link > #link{
+.card > .navigation-link > #link{
     color: var(--l-blue);
     font-size: 1rem;
     font-weight: 600;
@@ -162,4 +164,73 @@ ul{
 
 .input-icon-field > input::placeholder{
     color: var(--l-blue);
+}
+
+@media screen and (max-width: 900px) {
+    .card{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .card{
+        width: 70%;
+        height: 85%;
+    }
+    .login-card, .forgot-card, .reset-card{
+        height: 80%;
+    }
+    .card > h2{
+        font-size: 1.9rem;
+    }
+    .card > form > input{
+        font-size: 15px;
+     }
+     .card > form > button{
+         font-size: 15px;
+     }
+     .navigation-link{
+         font-size: 15px;
+     }
+     .navigation-link > #link{
+         font-size: 15px;
+     }
+     .input-icon-field > .icon{
+         font-size: 1.3rem;
+     }
+     .input-icon-field > input{
+         font-size: 15px;
+     }
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 75%;
+        height: 80%;
+        padding: 20px;
+    }
+    .card > h2{
+        font-size: 1.6rem;
+    }
+    .card > form > input{
+       font-size: 14px;
+    }
+    .card > form > button{
+        font-size: 14px;
+    }
+    .navigation-link{
+        font-size: 14px;
+    }
+    .navigation-link > #link{
+        font-size: 14px;
+    }
+    .input-icon-field > .icon{
+        font-size: 1.2rem;
+    }
+    .input-icon-field > input{
+        font-size: 14px;
+    }
+    .login-card, .forgot-card, .reset-card{
+        height: 75%;
+    }
 }

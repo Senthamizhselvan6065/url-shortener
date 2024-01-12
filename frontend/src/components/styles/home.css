@@ -98,3 +98,94 @@
     line-height: 25px;
     font-size: 0.9rem;
 }
+
+@media screen and (max-width: 1000px) {
+    .home-container > .home-content{
+        width: 100%;
+    }
+    .home-container > h2{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .home-container{
+        padding: 30px;
+        gap: 20px;
+    }
+    .home-container > h2{
+        font-size: 1.6rem;
+        padding: 0;
+        margin: 0;
+    }
+    .home-container > .home-content{
+        padding: 0;
+        width: 100%;
+    }
+    .home-container > .home-content > .content-box > h3{
+        font-size: 20px;
+    }
+    .home-container > .home-content > .content-box > p{
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    .home-content-box{
+        gap: 20px;
+    }
+    .home-content-box > .box{
+       width: 80%;
+       height: 200px;
+    }
+    .home-content-box > .box > img{
+        width: 70px;
+        height: 70px;
+    }
+    .home-content-box > .box > h3{
+        font-size: 18px;
+    }
+    .home-content-box > .box > p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-container{
+        padding: 20px;
+        gap: 20px;
+    }
+    .home-container > h2{
+        font-size: 1.4rem;
+        padding: 0;
+        margin: 0;
+    }
+    .home-container > .home-content{
+        padding: 0;
+        width: 100%;
+        gap: 0;
+    }
+    .home-container > .home-content > .content-box > h3{
+        font-size: 17px;
+    }
+    .home-container > .home-content > .content-box > p{
+        font-size: small;
+        line-height: 25px;
+        letter-spacing: 0px;
+    }
+    .home-content-box{
+        gap: 10px;
+    }
+    .home-content-box > .box{
+       width: 80%;
+       height: 200px;
+    }
+    .home-content-box > .box > img{
+        width: 60px;
+        height: 60px;
+    }
+    .home-content-box > .box > h3{
+        font-size: 16px;
+    }
+    .home-content-box > .box > p{
+        font-size: small;
+    }
+}

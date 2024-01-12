@@ -10,13 +10,39 @@
     background-color: var(--l-blue);
 }
 
-.url-shortener-container h2{
+.url-shortener-container > .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.url-shortener-container > .title h2{
     font-size: 2.6rem;
     color: var(--blue);
 }
 
+.url-shortener-container > .title h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--blue);
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.url-shortener-container > .title h3:hover{
+    background-color: var(--gray);
+    padding: 6px 20px;
+    transition: all 0.4s ease-in-out;
+    color: var(--l-blue);
+    box-shadow: 0 0 20px rgb(29, 29, 29);
+}
+
 .url-container{
-    width: 60%;
+    width: 70%;
     height: 320px;
     padding: 20px;
     border-radius: 10px;
@@ -33,6 +59,7 @@
     letter-spacing: 1px;
     font-size: 1.6rem;
     font-weight: 500;
+    text-align: center;
 }
 
 .url-container p{
@@ -93,6 +120,7 @@
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--blue);
+    text-align: center;
 }
 
 .url-content p{
@@ -108,8 +136,192 @@
     outline: none;
     font-size: 1rem;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 5px;
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--gray);
+    color: var(--blue);
+}
+
+.url-content > #link:hover{
+    transition: all 0.4s ease-in-out;
+    color: var(--l-blue);
+    box-shadow: 0 0 20px rgb(26, 26, 26);
+}
+
+@media screen and (max-width: 1200px) {
+    .url-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .url-shortener-container > h2{
+        font-size: 1.9rem;
+    }
+    .url-container{
+        width: 80%;
+        height: fit-content;
+        padding: 50px 40px;
+        gap: 30px;
+    }
+    .url-container > h3{
+        font-size: 1.5rem;
+    }
+    .url-container > p{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    .url-container > form > input{
+        width: 63%;
+        padding: 10px 25px;
+        font-size: 1.1rem;
+    }
+    .url-container > form > button{
+        width: fit-content;
+        padding: 11px 20px;
+        font-size: 1.1rem;
+    }
+    .url-content{
+        width: 80%;
+    }
+    .url-content > h3{
+        font-size: 1.3rem;
+        letter-spacing: 0px;
+    }
+    .url-content > p{
+        letter-spacing: 0px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .url-content > #link{
+        font-size: 14px;
+        letter-spacing: 0px;
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .url-shortener-container{
+        padding: 20px;
+    }
+    .url-shortener-container > h2{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .url-container{
+        width: 90%;
+        height: fit-content;
+        gap: 30px;
+        padding: 30px;
+    }
+    .url-container > h3{
+        font-size: 1.6rem;
+    }
+    .url-container > p{
+        font-size: 15px;
+        letter-spacing: 0px;
+        line-height: 25px;
+    }
+    .url-container > form{
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+    .url-container > form > input{
+        padding: 12px 20px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .url-container > form > button{
+        width: fit-content;
+        padding: 12px 40px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .url-content{
+        width: 90%;
+    }
+    .url-content > h3{
+        font-size: 1.2rem;
+        letter-spacing: 0px;
+    }
+    .url-content > p{
+        letter-spacing: 0px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .url-content > #link{
+        font-size: 14px;
+        letter-spacing: 0px;
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .url-shortener-container{
+        padding: 10px;
+    }
+    .url-shortener-container > .title{
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    .url-shortener-container > .title > h2{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .url-shortener-container > .title > h3{
+        font-size: 1rem;
+    }
+    .url-container{
+        width: 95%;
+        height: fit-content;
+        gap: 20px;
+        padding: 30px;
+    }
+    .url-container > h3{
+        font-size: 1.4rem;
+        letter-spacing: 0px;
+    }
+    .url-container > p{
+        font-size: small;
+        letter-spacing: 0px;
+        line-height: 25px;
+    }
+    .url-container > form{
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+    .url-container > form > input{
+        padding: 10px 20px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .url-container > form > button{
+        width: fit-content;
+        padding: 10px 30px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .url-content{
+        width: 95%;
+    }
+    .url-content > h3{
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+    .url-content > p{
+        letter-spacing: 0px;
+        font-size: small;
+        line-height: 25px;
+    }
+    .url-content > #link{
+        font-size: 14px;
+        letter-spacing: 0px;
+        padding: 10px 30px;
+    }
 }
