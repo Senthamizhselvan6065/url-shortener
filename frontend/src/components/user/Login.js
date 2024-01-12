@@ -6,6 +6,7 @@ import toast from 'react-hot-toast';
 import Loader from '../Loader';
 import { MdOutlineMailLock } from "react-icons/md";
 import { MdOutlinePassword } from "react-icons/md";
+import { loginValidation } from '../../helper/validate';
 
 
 const Login = () => {
@@ -17,7 +18,7 @@ const Login = () => {
        email: "",
        password: ""
     },
-    validate: "",
+    validate: loginValidation,
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit: values => {

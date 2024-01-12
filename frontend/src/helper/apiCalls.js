@@ -13,7 +13,7 @@ export const login = async values => await axios.post(`${BASE_URL}/user/login`, 
 export const forogt = async values => await axios.post(`${BASE_URL}/user/forgot/password`, values);
 
 /* register user */
-export const reset = async (values, token) => await axios.post(`${BASE_URL}/user/reset/password/${token}`, values);
+export const reset = async (token, values ) => await axios.post(`${BASE_URL}/user/reset/password/${token}`, values);
 
 /* get all urls */
 export const getUrls = async () => await axios.get(`${BASE_URL}/url/geturls`)

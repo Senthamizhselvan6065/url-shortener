@@ -97,6 +97,9 @@ header .navigation-link{
         font-size: 1.6rem;
         font-weight: 500;
     }
+    header > .navigation-link{
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -109,5 +112,8 @@ header .navigation-link{
     header > .logo > h2{
         font-size: 1.6rem;
         font-weight: 500;
+    }
+    header > .navigation-link{
+        height: 100vh;
     }
 }

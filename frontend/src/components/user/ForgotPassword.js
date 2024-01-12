@@ -5,6 +5,7 @@ import toast from 'react-hot-toast';
 import { forogt } from '../../helper/apiCalls';
 import Loader from '../Loader';
 import { MdOutlineMailLock } from "react-icons/md";
+import { forgotPasswordValidation } from '../../helper/validate';
 
 
 const ForgotPassword = () => {
@@ -15,7 +16,7 @@ const ForgotPassword = () => {
     initialValues: {
        email: "",
     },
-    validate: "",
+    validate: forgotPasswordValidation,
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit: values => {

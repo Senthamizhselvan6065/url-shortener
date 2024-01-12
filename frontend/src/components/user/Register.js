@@ -4,6 +4,7 @@ import { useFormik } from 'formik';
 import { register } from '../../helper/apiCalls';
 import toast from 'react-hot-toast';
 import Loader from '../Loader';
+import { registerValidation } from '../../helper/validate';
 
 const Register = () => {
 
@@ -16,7 +17,7 @@ const Register = () => {
         email: "",
         password: ""
      },
-     validate: "",
+     validate: registerValidation,
      validateOnBlur: false,
      validateOnChange: false,
      onSubmit: values => {
