@@ -36,9 +36,9 @@
 
 -------------------------------
 
-## Backend Url : http://password-reset.com
-
 ## BackEnd Router End Points
+
+## BASE_URL : http://password-reset.com
 
 <b>Create a Account</b>
 <pre>POST : <a href='http://password-reset.com/api/v1/user/register'>/register</a></pre>
@@ -68,9 +68,9 @@
 
 ---------------------------------
 
-## Frontend Url : http://password-reset.com
-
 ## FrontEnd Router End Points
+
+## BASE_URL : http://password-reset.com
 
 <b>Create a user</b>
 <pre>POST : <a href='http://password-reset.com/register'>/register</a></pre>
