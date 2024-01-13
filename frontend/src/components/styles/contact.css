@@ -88,6 +88,11 @@
     cursor: pointer;
 }
 
+.contact-card > form > button:hover{
+    box-shadow: 0 0 20px rgb(23, 23, 23);
+    transition: all 0.4s ease-in-out;
+}
+
 .contact-card > .navigation-link > #link{
     color: var(--l-blue);
     font-weight: 500;
@@ -115,4 +120,65 @@
 .contact-card > .icons > .icon:hover{
     border-bottom: 2px solid var(--black);
     transition: all 0.3s ease-in;
+}
+
+
+@media screen and (max-width: 900px) {
+    .contact-card{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .contact-card{
+       width: 65%;
+       height: 86%;
+    }
+    .contact-card > h2{
+       font-size: 1.8rem;
+    }
+    .contact-card > form{
+         width: 90%; 
+    }
+    .contact-card > form > input{
+       font-size: 15px;
+    }
+    .contact-card > form > textarea{
+       font-size: 15px;
+       height: 100px;
+    }
+    .contact-card > form > button{
+       font-size: 15px;
+       padding: 10px 30px;
+    }
+    .contact-card > .icons > .icon{
+       font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+     .contact-card{
+        width: 90%;
+        height: 80%;
+     }
+     .contact-card > h2{
+        font-size: 1.4rem;
+     }
+     .contact-card > form{
+          width: 100%; 
+     }
+     .contact-card > form > input{
+        font-size: 14px;
+     }
+     .contact-card > form > textarea{
+        font-size: 14px;
+        height: 80px;
+     }
+     .contact-card > form > button{
+        font-size: small;
+        padding: 10px 30px;
+     }
+     .contact-card > .icons > .icon{
+        font-size: 1.6rem;
+     }
 }

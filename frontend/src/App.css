@@ -107,6 +107,11 @@ ul{
     cursor: pointer;
 }
 
+.card > form > button:hover{
+    box-shadow: 0 0 20px rgb(23, 23, 23);
+    transition: all 0.4s ease-in-out;
+}
+
 .card > .navigation-link{
     letter-spacing: 1px;
 }
