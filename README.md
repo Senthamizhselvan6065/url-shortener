@@ -19,20 +19,20 @@
 
 ## Dependencies and using npm packages
   
-    1. bcrypt
-    2. body-parse
-    3. cors
-    4. express 
-    5. mongoose
-    6. dotenv
-    7. jsonwebtoken
-    8. nodemailer
-    9. nodemon
-    10. shortid
-    11. validator
-    12. crypto
-    13. express-async-handler
-    14. valid-url
+1. bcrypt
+2. body-parse
+3. cors
+4. express 
+5. mongoose
+6. dotenv
+7. jsonwebtoken
+8. nodemailer
+9. nodemon
+10. shortid
+11. validator
+12. crypto
+13. express-async-handler
+14. valid-url
 
 -------------------------------
 
