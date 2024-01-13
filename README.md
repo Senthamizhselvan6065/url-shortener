@@ -40,7 +40,7 @@
 
 ### BASE_URL : http://password-reset.com
 
-<b>Create a Account</b>
+<b>Create a new Account</b>
 <pre>POST : <a href='http://password-reset.com/api/v1/user/register'>/register</a></pre>
 
 <b>Login a user</b>
@@ -56,11 +56,11 @@
 
 <b>Long Url to Short Url</b>
   > paste long url in request body
-<pre>POST : <a href='http://password-reset.com/api/v1/url/originalUrl'>/reset/password</a></pre>
+<pre>POST : <a href='http://password-reset.com/api/v1/url/originalUrl'>/originalUrl</a></pre>
 
 <b>Short Url</b>
   > get the short Url in req.params
-<pre>GET : <a href='http://password-reset.com/api/v1/user/reset/password/:token'>/reset/password</a></pre>
+<pre>GET : <a href='http://password-reset.com/api/v1/user/shortUrl/:shortUrl'>/shortUrl/:shortUrl</a></pre>
 
 <b>Delete Short Url</b>
   > get the req.params and delete now
