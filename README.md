@@ -51,19 +51,19 @@
 <pre>POST : <a href='http://password-reset.com/api/v1/user/forgot/password'>/forgot/password</a></pre>
 
 <b>Reset Password</b>
-    > get the link and reset your new password
+  > get the link and reset your new password
 <pre>POST : <a href='http://password-reset.com/api/v1/user/reset/password/:token'>/reset/password</a></pre>
 
 <b>Long Url to Short Url</b>
-    > paste long url in request body
+  > paste long url in request body
 <pre>POST : <a href='http://password-reset.com/api/v1/url/originalUrl'>/reset/password</a></pre>
 
 <b>Short Url</b>
-    > get the short Url in req.params
+  > get the short Url in req.params
 <pre>GET : <a href='http://password-reset.com/api/v1/user/reset/password/:token'>/reset/password</a></pre>
 
 <b>Delete Short Url</b>
-    > get the req.params and delete now
+  > get the req.params and delete now
 <pre>DELETE : <a href='http://password-reset.com/api/v1/url/delete/:shortUrl'>/delete/:shortUrl</a></pre>
 
 ---------------------------------
